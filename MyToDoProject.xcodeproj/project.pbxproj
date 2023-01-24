@@ -7,12 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		03F01A0EFC3E09AC792955AD /* libPods-MyToDoProject.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C63F08150E1E8E0F3391F20B /* libPods-MyToDoProject.a */; };
 		6DCDE012297C36FF0047C76F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DCDE011297C36FF0047C76F /* AppDelegate.swift */; };
 		6DCDE014297C36FF0047C76F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DCDE013297C36FF0047C76F /* SceneDelegate.swift */; };
 		6DCDE016297C36FF0047C76F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DCDE015297C36FF0047C76F /* ViewController.swift */; };
 		6DCDE01B297C37000047C76F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6DCDE01A297C37000047C76F /* Assets.xcassets */; };
 		6DCDE01E297C37000047C76F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6DCDE01C297C37000047C76F /* LaunchScreen.storyboard */; };
 		6DCDE026297D91B30047C76F /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 6DCDE025297D91B30047C76F /* .gitignore */; };
+		6DD87DBF297DD1B2008D95C3 /* UserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DD87DBE297DD1B2008D95C3 /* UserDefaults.swift */; };
+		6DD87DC1297DD6EE008D95C3 /* SomeCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DD87DC0297DD6EE008D95C3 /* SomeCollectionView.swift */; };
+		6DD87DC5297FE7ED008D95C3 /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DD87DC4297FE7ED008D95C3 /* CollectionViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,12 @@
 		6DCDE01D297C37000047C76F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6DCDE01F297C37000047C76F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6DCDE025297D91B30047C76F /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		6DD87DBE297DD1B2008D95C3 /* UserDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaults.swift; sourceTree = "<group>"; };
+		6DD87DC0297DD6EE008D95C3 /* SomeCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SomeCollectionView.swift; sourceTree = "<group>"; };
+		6DD87DC4297FE7ED008D95C3 /* CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
+		7E95FA4180E481D30E7528AE /* Pods-MyToDoProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyToDoProject.debug.xcconfig"; path = "Target Support Files/Pods-MyToDoProject/Pods-MyToDoProject.debug.xcconfig"; sourceTree = "<group>"; };
+		C63F08150E1E8E0F3391F20B /* libPods-MyToDoProject.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MyToDoProject.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F2AE937294167A2346EEBA12 /* Pods-MyToDoProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyToDoProject.release.xcconfig"; path = "Target Support Files/Pods-MyToDoProject/Pods-MyToDoProject.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +41,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				03F01A0EFC3E09AC792955AD /* libPods-MyToDoProject.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3889D31DAA7A89196FE8F608 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7E95FA4180E481D30E7528AE /* Pods-MyToDoProject.debug.xcconfig */,
+				F2AE937294167A2346EEBA12 /* Pods-MyToDoProject.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		6DCDE005297C36FF0047C76F = {
 			isa = PBXGroup;
 			children = (
 				6DCDE010297C36FF0047C76F /* MyToDoProject */,
 				6DCDE00F297C36FF0047C76F /* Products */,
+				3889D31DAA7A89196FE8F608 /* Pods */,
+				B5665F2410E03C7C3F51A2CA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -59,12 +81,23 @@
 				6DCDE011297C36FF0047C76F /* AppDelegate.swift */,
 				6DCDE013297C36FF0047C76F /* SceneDelegate.swift */,
 				6DCDE015297C36FF0047C76F /* ViewController.swift */,
+				6DD87DC0297DD6EE008D95C3 /* SomeCollectionView.swift */,
+				6DD87DBE297DD1B2008D95C3 /* UserDefaults.swift */,
+				6DD87DC4297FE7ED008D95C3 /* CollectionViewController.swift */,
 				6DCDE01A297C37000047C76F /* Assets.xcassets */,
 				6DCDE01C297C37000047C76F /* LaunchScreen.storyboard */,
 				6DCDE01F297C37000047C76F /* Info.plist */,
 				6DCDE025297D91B30047C76F /* .gitignore */,
 			);
 			path = MyToDoProject;
+			sourceTree = "<group>";
+		};
+		B5665F2410E03C7C3F51A2CA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C63F08150E1E8E0F3391F20B /* libPods-MyToDoProject.a */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,6 +107,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6DCDE022297C37000047C76F /* Build configuration list for PBXNativeTarget "MyToDoProject" */;
 			buildPhases = (
+				6F57281BE620CF3F8D00FC7F /* [CP] Check Pods Manifest.lock */,
 				6DCDE00A297C36FF0047C76F /* Sources */,
 				6DCDE00B297C36FF0047C76F /* Frameworks */,
 				6DCDE00C297C36FF0047C76F /* Resources */,
@@ -133,11 +167,39 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		6F57281BE620CF3F8D00FC7F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MyToDoProject-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		6DCDE00A297C36FF0047C76F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6DD87DC5297FE7ED008D95C3 /* CollectionViewController.swift in Sources */,
+				6DD87DC1297DD6EE008D95C3 /* SomeCollectionView.swift in Sources */,
+				6DD87DBF297DD1B2008D95C3 /* UserDefaults.swift in Sources */,
 				6DCDE016297C36FF0047C76F /* ViewController.swift in Sources */,
 				6DCDE012297C36FF0047C76F /* AppDelegate.swift in Sources */,
 				6DCDE014297C36FF0047C76F /* SceneDelegate.swift in Sources */,
@@ -274,6 +336,7 @@
 		};
 		6DCDE023297C37000047C76F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7E95FA4180E481D30E7528AE /* Pods-MyToDoProject.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -286,6 +349,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -301,6 +365,7 @@
 		};
 		6DCDE024297C37000047C76F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F2AE937294167A2346EEBA12 /* Pods-MyToDoProject.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -313,6 +378,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
